@@ -1,40 +1,9 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
+import resList from "../utils/mockData";
 
 const Body = () => {
-  const [listOfRestaurants,setListOfRestaurant] = useState([ {
-    data: {
-      id: "334476",
-      name: "KFC",
-      cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
-      cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
-      costForTwo: 40000,
-      costForTwoString: "₹400 FOR TWO",
-      avgRating: "3.8",
-    },
-  },
-  {
-    data: {
-      id: "334478",
-      name: "Meghna",
-      cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
-      cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
-      costForTwo: 40000,
-      costForTwoString: "₹400 FOR TWO",
-      avgRating: "4.8",
-    },
-  },
-  {
-    data: {
-      id: "334475",
-      name: "Dominos",
-      cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
-      cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
-      costForTwo: 40000,
-      costForTwoString: "₹400 FOR TWO",
-      avgRating: "4.6",
-    },
-  },]);
+  const [listOfRestaurants,setListOfRestaurant] = useState(resList);
   
 
   return (
