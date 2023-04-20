@@ -5,12 +5,11 @@ import resList from "../utils/mockData";
 const Body = () => {
   const [listOfRestaurants,setListOfRestaurant] = useState(resList);
   
-
   return (
     <div className="body">
       <div className="filter">
         <button
-          className="filter-btn"
+          className="filter-btnkk"
           onClick={() => {
            const filteredList = listOfRestaurants.filter(
               (res) => res.data.avgRating > 4
