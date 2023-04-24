@@ -32,9 +32,9 @@ console.log("render")
 //if restaurant is empty=> shimmer UI
 //if restaurant has data => actaul data UI
 if (!allRestaurants) return null;
-if(filteredRestaurants?.length===0){
-  return <h1>No Restaurant match your filter!!</h1>
-}
+// if(filteredRestaurants?.length===0){
+//   return <h1>No Restaurant match your filter!!</h1>
+// }
 
   return (filteredRestaurants.length===0) ?<Shimmer/>:(
     <div className="body">
@@ -60,9 +60,7 @@ if(filteredRestaurants?.length===0){
         <button onClick={()=>{
           const searchedResult=allRestaurants.filter(
             (res)=>res?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase())
-          );
-
-          
+          );      
           setFilteredRestaurants(searchedResult)
         }}>Search</button>
       </div>
