@@ -7,11 +7,7 @@ const Body = () => {
   const [filteredRestaurants,setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText]=useState("");
   
-// function filterData(searchText,restaurants){
-//   const filterData=restaurants.filter((restaurants)=>{
-//     restaurants.data.name.includes(searchText)
-//   })
-// }
+
 
 useEffect(()=>{
   getRestaurants();
