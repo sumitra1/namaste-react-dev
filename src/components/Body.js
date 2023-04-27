@@ -72,4 +72,4 @@ if (!allRestaurants) return null;
 
 export default Body;
 
-//Getting in my nerves
+
